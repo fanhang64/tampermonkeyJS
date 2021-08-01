@@ -31,7 +31,7 @@
         for(let i=elems.length-1; i>=0; i--){
             let stext = "";
             let b_caption = elems[i].getElementsByClassName('b_caption');
-            if(!b_caption){
+            if(!b_caption || b_caption.length <= 0 ){
                 continue;
             }
             stext = b_caption[0].innerText;
